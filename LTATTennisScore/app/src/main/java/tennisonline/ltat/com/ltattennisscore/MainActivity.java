@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import tennisonline.ltat.com.ltattennisscore.ActivityContainer.SplashActivity;
 
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
                 Intent i=new Intent(MainActivity.this, SplashActivity.class);
                 startActivity(i);
+                Toast.makeText(getApplicationContext(),"check",Toast.LENGTH_LONG).show();
             }
         });
     }
