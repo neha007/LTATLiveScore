@@ -12,6 +12,8 @@ import android.util.Log;
 import android.view.animation.BounceInterpolator;
 import android.view.animation.TranslateAnimation;
 import android.view.animation.Animation.AnimationListener;
+import android.widget.Toast;
+
 import tennisonline.ltat.com.ltattennisscore.R;
 
 public class SplashActivity extends AppCompatActivity {
@@ -19,12 +21,15 @@ public class SplashActivity extends AppCompatActivity {
 
     LinearLayout lt1;
     Button b;
+    Button bt2;
     private static final String TAG = "AnimationStarter";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+         bt2=(Button) findViewById(R.id.bt2);
+        Toast.makeText(this, "this is harshit", Toast.LENGTH_SHORT).show();
 
         b = (Button)findViewById(R.id.watch);
         b.setOnClickListener(new View.OnClickListener() {
@@ -42,6 +47,15 @@ public class SplashActivity extends AppCompatActivity {
         mAnimation.setRepeatCount(-2);
         mAnimation.setRepeatMode(Animation.REVERSE);
         bounceBallImage.setAnimation(mAnimation);
+
+        bt2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent in=new Intent(SplashActivity.this,LTATSingup.class);
+                startActivity(in);
+            }
+        });
 
 
     }
