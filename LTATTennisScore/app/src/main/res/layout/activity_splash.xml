@@ -51,6 +51,7 @@
             android:outlineProvider="bounds"
             android:text="Watch the Score"
             android:textColor="@color/colorwhite"
+            android:id="@+id/watch"
             android:background="@drawable/buttonborder"
             />
 
