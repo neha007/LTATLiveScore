@@ -1,20 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
+    android:paddingTop="10dp"
     android:gravity="center"
     android:orientation="vertical"
     android:layout_weight="1"
     android:background="@drawable/tennisbackground"
     tools:context="tennisonline.ltat.com.ltattennisscore.ActivityContainer.SplashActivity">
-<ImageView
-    android:layout_width="100dp"
-    android:layout_height="100dp"
-    android:id="@+id/bounceBallImage"
-    />
 
+    <ImageView
+        android:id="@+id/bounceBallImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/tenish" />
 
 
     <LinearLayout
@@ -32,7 +35,8 @@
             android:textAlignment="center"
             android:text="@string/text"
             android:layout_marginTop="15dp"
-            android:textColor="#18d9c2"/>
+            android:textColor="@color/colororange"/>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -52,12 +56,12 @@
             android:outlineProvider="bounds"
             android:text="Watch the Score"
             android:textColor="@color/colorwhite"
-            android:id="@+id/watch"
+            android:id="@+id/watch_score"
             android:background="@drawable/buttonborder"
             />
 
         <Button
-            android:id="@+id/bt2"
+            android:id="@+id/keep_score"
             android:layout_width="240dp"
             android:layout_height="wrap_content"
             android:textAlignment="center"
@@ -66,6 +70,6 @@
             android:text="Keep the Score"
             android:textColor="@color/colorwhite"
             android:background="@drawable/buttonborder"/>
-
     </LinearLayout>
+
 </LinearLayout>

@@ -18,50 +18,44 @@ import android.view.animation.Animation;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.util.Log;
-import android.view.animation.BounceInterpolator;
 import android.view.animation.TranslateAnimation;
-import android.view.animation.Animation.AnimationListener;
-import android.widget.Toast;
-
-import de.hdodenhof.circleimageview.CircleImageView;
 import tennisonline.ltat.com.ltattennisscore.R;
 
 public class SplashActivity extends AppCompatActivity {
 
 
-    LinearLayout lt1;
-    Button b;
-    Button bt2;
+    Button watch_score,keep_score;
     private static final String TAG = "AnimationStarter";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
-         bt2=(Button) findViewById(R.id.bt2);
-        b = (Button)findViewById(R.id.watch);
+
+
 
         getSupportActionBar().hide();
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-        b.setOnClickListener(new View.OnClickListener() {
+
+        watch_score=(Button) findViewById(R.id.watch_score);
+        keep_score=(Button) findViewById(R.id.keep_score);
+
+        watch_score.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent("tennisonline.ltat.com.ltattennisscore.MainActivity");
+                Intent i = new Intent(SplashActivity.this,LTATLogin.class);
                 startActivity(i);
             }
         });
+        keep_score.setOnClickListener(new View.OnClickListener() {
 
-        bt2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 Intent in=new Intent(SplashActivity.this,LTATSingup.class);
                 startActivity(in);
             }
         });
-
 
 
         ImageView bounceBallImage = (ImageView)findViewById(R.id.bounceBallImage);
@@ -77,10 +71,6 @@ public class SplashActivity extends AppCompatActivity {
         mAnimation.setRepeatMode(Animation.REVERSE);
         bounceBallImage.setAnimation(mAnimation);
 
-
-    }
-    private int getDisplayHeight(){
-        return this.getResources().getDisplayMetrics().heightPixels;
-    }
-
+        }
 }
+

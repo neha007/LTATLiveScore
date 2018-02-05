@@ -4,7 +4,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/logo"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -22,13 +22,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ActivityContainer.LTATLogin">
-            <intent-filter>
-                <action android:name="tennisonline.ltat.com.ltattennisscore.LTATLogin" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".ActivityContainer.LTATLogin"></activity>
         <activity android:name=".ActivityContainer.LTATSingup"></activity>
     </application>
 

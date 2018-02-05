@@ -10,18 +10,21 @@ import tennisonline.ltat.com.ltattennisscore.R;
 
 public class LTATSingup extends AppCompatActivity {
 
-    Button bt1;
+    Button about,create,join;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ltatsingup);
-       bt1=(Button) findViewById(R.id.bt1);
 
-        bt1.setOnClickListener(new View.OnClickListener() {
+       about=(Button) findViewById(R.id.about_keppScore);
+        create=(Button) findViewById(R.id.create);
+        join=(Button) findViewById(R.id.join);
+
+        about.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                Toast.makeText(LTATSingup.this, "this is harshit", Toast.LENGTH_SHORT).show();
+                Toast.makeText(LTATSingup.this, "this is about pages", Toast.LENGTH_SHORT).show();
             }
         });
     }
