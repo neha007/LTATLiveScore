@@ -33,11 +33,6 @@ public class SplashActivity extends AppCompatActivity {
         setContentView(R.layout.activity_splash);
 
 
-
-        getSupportActionBar().hide();
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
-
-
         watch_score=(Button) findViewById(R.id.watch_score);
         keep_score=(Button) findViewById(R.id.keep_score);
 
@@ -59,7 +54,9 @@ public class SplashActivity extends AppCompatActivity {
 
 
         ImageView bounceBallImage = (ImageView)findViewById(R.id.bounceBallImage);
+
         Bitmap bitmap = BitmapFactory.decodeResource(getResources(),R.drawable.tennisball);
+//
         RoundedBitmapDrawable roundedBitmapDrawable = RoundedBitmapDrawableFactory.create(getResources(),bitmap);
         roundedBitmapDrawable.setCircular(true);
         bounceBallImage.setImageDrawable(roundedBitmapDrawable);
@@ -72,5 +69,12 @@ public class SplashActivity extends AppCompatActivity {
         bounceBallImage.setAnimation(mAnimation);
 
         }
-}
 
+        ImageView about = (ImageView)findViewById(R.id.about);
+        //Bitmap bitmap1 = BitmapFactory.decodeResource(getResources(),R.drawable.abouticon);
+        //RoundedBitmapDrawable roundedBitmapDrawable1 = RoundedBitmapDrawableFactory.create(getResources(),bitmap1);
+        //roundedBitmapDrawable1.setCircular(true);
+        //about.setImageDrawable(roundedBitmapDrawable);
+
+
+    }
