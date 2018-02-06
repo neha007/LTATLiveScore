@@ -5,21 +5,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:paddingTop="10dp"
-    android:gravity="center"
     android:orientation="vertical"
     android:layout_weight="1"
-    android:background="@drawable/tennisbackground"
     tools:context="tennisonline.ltat.com.ltattennisscore.ActivityContainer.SplashActivity">
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/frame"
+    android:background="@drawable/tennisbackground">
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/about"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginLeft="150dp"
-        android:layout_marginTop="-120dp"
-        android:src="@drawable/abouticon">
-    </de.hdodenhof.circleimageview.CircleImageView>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+<Button
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:id="@+id/warning"
+    android:layout_marginTop="-40dp"
+    android:layout_marginLeft="150dp"
+    android:background="@drawable/aboutopen"/>
 
 
 
@@ -27,15 +33,16 @@
         android:id="@+id/bounceBallImage"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginTop="0dp"
-        android:background="@drawable/tenish" />
+        android:layout_marginTop="50dp"
+        android:background="@drawable/tennnn1"
+    />
 
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/lin_lay"
-        android:gravity="center"
+        android:layout_marginTop="50dp"
         android:orientation="vertical">
 
         <TextView
@@ -82,5 +89,7 @@
             android:textColor="@color/colorwhite"
             android:background="@drawable/buttonborder"/>
     </LinearLayout>
+</LinearLayout>
+</FrameLayout>
 
 </LinearLayout>

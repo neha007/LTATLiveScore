@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#555555"
+    tools:context="tennisonline.ltat.com.ltattennisscore.ActivityContainer.TossActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="190dp"
+        android:layout_height="400dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/player1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:text="player1"
+            android:textColor="@color/colorred"
+            android:layout_marginLeft="40dp"
+            android:textSize="25dp" />
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/playerimage"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="190dp"
+        android:layout_height="400dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/player2"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:text="player2"
+            android:textColor="@color/colorred"
+            android:layout_marginLeft="40dp"
+            android:textSize="25dp" />
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/playerimage"/>
+
+    </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+<RadioGroup
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/radiogroup"
+    android:orientation="horizontal">
+            <RadioButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/r1"
+                android:layout_marginLeft="80dp"
+                />
+            <RadioButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/r2"
+                android:layout_marginLeft="80dp"/>
+
+</RadioGroup>
+    </LinearLayout>
+
+</LinearLayout>

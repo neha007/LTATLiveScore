@@ -3,4 +3,9 @@
     <string name="text">LTAT Live Score</string>
     <string name="text2">Now it is even to follow \n
                  the score join us</string>
+    <string name="textabout">LTAT Tennis Score</string>
+    <string name="textsmall">LTAT Tennis Score LTAT Tennis Score LTAT Tennis Score LTAT Tennis Score Tennis ScoreLTAT Tennis ScoreLTAT Tennis ScoreLTAT Tennis ScoreLTAT Tennis Score</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
