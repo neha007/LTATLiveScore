@@ -21,8 +21,7 @@ import tennisonline.ltat.com.ltattennisscore.fragmentcontainer.About;
 
 public class SplashActivity extends AppCompatActivity {
 
-
-    Button watch_score,keep_score;
+    Button watch_score,keep_score,back_button;
     private static final String TAG = "AnimationStarter";
     Button about ;
 
@@ -47,7 +46,8 @@ public class SplashActivity extends AppCompatActivity {
             }
         });
 
-
+        watch_score=(Button) findViewById(R.id.watch_score);
+        keep_score=(Button) findViewById(R.id.keep_score);
 
         watch_score.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -65,9 +65,8 @@ public class SplashActivity extends AppCompatActivity {
             }
         });
 
-
         ImageView bounceBallImage = (ImageView)findViewById(R.id.bounceBallImage);
-        Bitmap bitmap = BitmapFactory.decodeResource(getResources(),R.drawable.tennisball);
+        Bitmap bitmap = BitmapFactory.decodeResource(getResources(),R.drawable.tennnn1);
 
         RoundedBitmapDrawable roundedBitmapDrawable = RoundedBitmapDrawableFactory.create(getResources(),bitmap);
         roundedBitmapDrawable.setCircular(true);

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_ltatsingup"
     android:layout_width="match_parent"
@@ -10,11 +11,17 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:gravity="center"
     android:layout_gravity="center"
-    android:background="#555555"
+    android:background="@drawable/ba1"
     android:layout_centerVertical="true"
     android:layout_centerHorizontal="true"
     tools:context="tennisonline.ltat.com.ltattennisscore.ActivityContainer.LTATSingup">
 
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:background="@drawable/back"
+        />
     <Button
         android:id="@+id/about_keppScore"
         android:layout_width="30dp"
@@ -35,9 +42,11 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginTop="80dp"
+            android:fontFamily="serif"
+            android:textStyle="bold"
             android:text="You can either create a tournament \n      or join the one. "
             android:textSize="15dp"
-            android:textColor="#fff"
+            android:textColor="#000"
             android:gravity="center"
             />
     <Button
@@ -47,7 +56,6 @@
         android:background="#ff4646"
         android:textColor="#fff"
         android:textSize="20dp"
-
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         />

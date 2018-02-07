@@ -7,6 +7,7 @@
     android:layout_height="fill_parent"
     android:orientation="vertical"
     android:layout_weight="1"
+    android:background="@drawable/ba1"
     tools:context="tennisonline.ltat.com.ltattennisscore.ActivityContainer.SplashActivity">
 <FrameLayout
     android:layout_width="match_parent"
@@ -34,9 +35,7 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginTop="50dp"
-        android:background="@drawable/tennnn1"
-    />
-
+      android:background="@drawable/tenisba" />
 
     <LinearLayout
         android:layout_width="wrap_content"
