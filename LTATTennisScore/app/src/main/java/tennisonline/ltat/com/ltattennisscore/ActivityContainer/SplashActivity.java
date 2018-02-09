@@ -67,7 +67,7 @@ public class SplashActivity extends AppCompatActivity {
 
 
         ImageView bounceBallImage = (ImageView)findViewById(R.id.bounceBallImage);
-        Bitmap bitmap = BitmapFactory.decodeResource(getResources(),R.drawable.tennisball);
+        Bitmap bitmap = BitmapFactory.decodeResource(getResources(),R.drawable.tennnn1);
 
         RoundedBitmapDrawable roundedBitmapDrawable = RoundedBitmapDrawableFactory.create(getResources(),bitmap);
         roundedBitmapDrawable.setCircular(true);
