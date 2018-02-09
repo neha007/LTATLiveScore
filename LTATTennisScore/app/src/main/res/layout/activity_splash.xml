@@ -7,12 +7,13 @@
     android:layout_height="fill_parent"
     android:orientation="vertical"
     android:layout_weight="1"
+    android:background="@drawable/img1"
     tools:context="tennisonline.ltat.com.ltattennisscore.ActivityContainer.SplashActivity">
 <FrameLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/frame"
-    android:background="@drawable/tennisbackground">
+    >
 
 <LinearLayout
     android:layout_width="match_parent"
@@ -31,8 +32,8 @@
 
     <ImageView
         android:id="@+id/bounceBallImage"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:layout_marginTop="50dp"
         android:background="@drawable/tennnn1"
     />
@@ -53,14 +54,14 @@
             android:textAlignment="center"
             android:text="@string/text"
             android:layout_marginTop="15dp"
-            android:textColor="@color/colororange"/>
+            android:textColor="@color/colorwhite"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/text2"
             android:layout_marginTop="15dp"
-            android:textColor="#18d9c2"
+            android:textColor="@color/colorwhite"
             android:textAlignment="center"
             android:id="@+id/text2"
             android:textSize="15dp"/>
@@ -73,9 +74,9 @@
             android:textSize="20dp"
             android:outlineProvider="bounds"
             android:text="Watch the Score"
-            android:textColor="@color/colorwhite"
+            android:textColor="#222"
             android:id="@+id/watch_score"
-            android:background="@drawable/buttonborder"
+            android:background="@color/colorwhite"
             />
 
         <Button
@@ -86,8 +87,8 @@
             android:layout_marginTop="15dp"
             android:textSize="20dp"
             android:text="Keep the Score"
-            android:textColor="@color/colorwhite"
-            android:background="@drawable/buttonborder"/>
+            android:textColor="#222"
+            android:background="@color/colorwhite"/>
     </LinearLayout>
 </LinearLayout>
 </FrameLayout>

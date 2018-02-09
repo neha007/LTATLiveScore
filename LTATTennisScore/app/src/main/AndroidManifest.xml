@@ -25,7 +25,8 @@
         <activity android:name=".ActivityContainer.LTATLogin" />
         <activity android:name=".ActivityContainer.LTATSingup" />
         <activity android:name=".ActivityContainer.AboutActivity" />
-        <activity android:name=".ActivityContainer.TossActivity"></activity>
+        <activity android:name=".ActivityContainer.TossActivity" />
+        <activity android:name=".ActivityContainer.TossActivity1"></activity>
     </application>
 
 </manifest>
