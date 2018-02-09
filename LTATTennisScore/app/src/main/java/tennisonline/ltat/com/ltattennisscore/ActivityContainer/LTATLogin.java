@@ -41,6 +41,8 @@ public class LTATLogin extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+                Intent intent=new Intent(LTATLogin.this,TossActivity.class);
+                startActivity(intent);
 
             }
         }); 

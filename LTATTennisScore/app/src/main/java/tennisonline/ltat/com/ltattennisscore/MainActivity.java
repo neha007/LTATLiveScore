@@ -16,17 +16,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button bt1=(Button) findViewById(R.id.bt1);
-
-        bt1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                Intent i=new Intent(MainActivity.this, SplashActivity.class);
-                startActivity(i);
-                Toast.makeText(getApplicationContext(),"check",Toast.LENGTH_LONG).show();
-            }
-        });
     }
 
 }

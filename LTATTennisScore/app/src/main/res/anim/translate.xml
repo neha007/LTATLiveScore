@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<set xmlns:android="http://schemas.android.com/apk/res/android">
+<set
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:anim/linear_interpolator"
+    android:fillAfter="true">
 
     <translate
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:fromXDelta="0%"
-        android:toXDelta="0%"
-        android:fromYDelta="200%"
-        android:toYDelta="0%"
-        android:duration="2000"
-        android:zAdjustment="top" />
-
+        android:fromXDelta="0%p"
+        android:toXDelta="75%p"
+        android:duration="800" />
 </set>

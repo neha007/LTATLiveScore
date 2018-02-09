@@ -1,11 +1,16 @@
 package tennisonline.ltat.com.ltattennisscore.ActivityContainer;
 
+import android.Manifest;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.support.annotation.NonNull;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.graphics.drawable.RoundedBitmapDrawable;
 import android.support.v4.graphics.drawable.RoundedBitmapDrawableFactory;
 import android.support.v7.app.AppCompatActivity;
@@ -15,6 +20,7 @@ import android.view.animation.Animation;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.view.animation.TranslateAnimation;
+import android.widget.Toast;
 
 import tennisonline.ltat.com.ltattennisscore.R;
 import tennisonline.ltat.com.ltattennisscore.fragmentcontainer.About;
@@ -25,8 +31,6 @@ public class SplashActivity extends AppCompatActivity {
     private static final String TAG = "AnimationStarter";
     Button about ;
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,7 +39,6 @@ public class SplashActivity extends AppCompatActivity {
         about = (Button) findViewById(R.id.warning);
         watch_score=(Button) findViewById(R.id.watch_score);
         keep_score=(Button) findViewById(R.id.keep_score);
-
 
         about.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -79,12 +82,5 @@ public class SplashActivity extends AppCompatActivity {
         bounceBallImage.setAnimation(mAnimation);
 
         }
-
-    public void loadFragment(Fragment fragment){
-        FragmentManager fm = getSupportFragmentManager();
-        FragmentTransaction fragmentTransaction = fm.beginTransaction();
-        fragmentTransaction.replace(R.id.frame, fragment);
-        fragmentTransaction.commit();
-    }
 
     }

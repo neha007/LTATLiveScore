@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_ltatsingup"
@@ -9,29 +9,33 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:gravity="center"
-    android:layout_gravity="center"
-    android:background="@drawable/ba1"
-    android:layout_centerVertical="true"
-    android:layout_centerHorizontal="true"
+    android:orientation="vertical"
+    android:background="@drawable/img1"
     tools:context="tennisonline.ltat.com.ltattennisscore.ActivityContainer.LTATSingup">
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
     <Button
         android:id="@+id/back_button"
-        android:layout_width="40dp"
-        android:layout_height="30dp"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
         android:background="@drawable/back"
         />
     <Button
         android:id="@+id/about_keppScore"
         android:layout_width="30dp"
+        android:layout_marginLeft="240dp"
         android:layout_height="30dp"
         android:layout_alignParentRight="true"
-        android:background="@drawable/aboutopen"
+        android:background="@drawable/abouts1"
         />
+    </LinearLayout>
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_gravity="center"
         android:gravity="center"
@@ -45,29 +49,29 @@
             android:fontFamily="serif"
             android:textStyle="bold"
             android:text="You can either create a tournament \n      or join the one. "
-            android:textSize="15dp"
-            android:textColor="#000"
+            android:textSize="10dp"
+            android:textColor="#fff"
             android:gravity="center"
             />
     <Button
         android:id="@+id/create"
         android:text="CREATE"
         android:layout_marginTop="140dp"
-        android:background="#ff4646"
-        android:textColor="#fff"
+        android:background="#fff"
+        android:textColor="#222"
         android:textSize="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         />
         <Button
             android:id="@+id/join"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="20dp"
             android:text="JOIN"
             android:textSize="20dp"
-            android:background="#808080"
-            android:textColor="#fff"
+            android:background="#fff"
+            android:textColor="#222"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
     </LinearLayout>
-</RelativeLayout>
+</LinearLayout>

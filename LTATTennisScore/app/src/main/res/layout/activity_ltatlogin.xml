@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView android:layout_width="match_parent"
+<ScrollView
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
@@ -21,6 +22,19 @@
             android:background="#004040"
             />
 
+        <Switch
+            android:id="@+id/simpleSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:layout_gravity="right"
+            android:text="Notification         "
+            android:textSize="20dp"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:textOff=" 4.0 "
+            android:textOn=" 6.0 ">
+
+        </Switch>
         <CheckBox
             android:id="@+id/first_check"
             android:layout_width="fill_parent"
