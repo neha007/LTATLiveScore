@@ -5,7 +5,7 @@
     android:id="@+id/activity_toss1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorblack"
+    android:background="@drawable/background_frm"
     android:paddingLeft="10dp"
     android:orientation="vertical"
     android:paddingRight="10dp"
@@ -14,10 +14,10 @@
 
     <LinearLayout
         android:id="@+id/lt3"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
-        android:layout_height="380dp"
-        android:background="@color/colororange"
+        android:layout_height="400dp"
+        android:background="@drawable/background_frm"
         android:orientation="horizontal"
         >
 
@@ -33,6 +33,7 @@
                 android:textStyle="bold"
                 android:textSize="20dp"
                 android:textColor="#fff"
+                android:layout_marginTop="20dp"
                 android:layout_height="wrap_content"
                 android:text="Player1"
                 />
@@ -47,6 +48,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="40dp"
                 android:text="00"
+                android:textColor="#fff"
                 android:textSize="50dp"
                 android:layout_marginBottom="20dp"
                 />
@@ -64,6 +66,7 @@
                 android:layout_height="wrap_content"
                 android:text="Player3"
                 android:textSize="20dp"
+                android:layout_marginTop="20dp"
                 android:textColor="#fff"
                 android:textStyle="bold"
                 />
@@ -79,6 +82,7 @@
                 android:layout_marginTop="40dp"
                 android:layout_marginBottom="20dp"
                 android:text="00"
+                android:textColor="#fff"
                 android:textSize="50dp"
                 />
         </LinearLayout>
@@ -86,23 +90,22 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:layout_gravity="center"
         android:gravity="center">
 
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_marginTop="-30dp"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="140dp"
+                android:layout_marginLeft="160dp"
                 android:text="s1"
                 android:textColor="@color/colorwhite"
-                android:textSize="25dp" />
+                android:textSize="15dp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -110,7 +113,7 @@
                 android:layout_marginLeft="10dp"
                 android:text="s2"
                 android:textColor="@color/colorwhite"
-                android:textSize="25dp" />
+                android:textSize="15dp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -118,7 +121,7 @@
                 android:layout_marginLeft="10dp"
                 android:text="s3"
                 android:textColor="@color/colorwhite"
-                android:textSize="25dp" />
+                android:textSize="15dp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -126,7 +129,7 @@
                 android:layout_marginLeft="10dp"
                 android:text="s4"
                 android:textColor="@color/colorwhite"
-                android:textSize="25dp" />
+                android:textSize="15dp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -134,9 +137,207 @@
                 android:layout_marginLeft="10dp"
                 android:text="s5"
                 android:textColor="@color/colorwhite"
-                android:textSize="25dp" />
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="p1"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/colorwhite"
+                android:textSize="20dp" />
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="160dp">
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorwhite"
+                    android:text="0"
+                    android:inputType="number"
+                    android:maxEms="1"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp">
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorwhite"
+                    android:text="0"
+                    android:inputType="number"
+                    android:maxEms="1"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp">
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorwhite"
+                    android:text="0"
+                    android:inputType="number"
+                    android:maxEms="1"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp">
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorwhite"
+                    android:text="0"
+                    android:inputType="number"
+                    android:maxEms="1"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp">
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorwhite"
+                    android:text="0"
+                    android:inputType="number"
+                    android:maxEms="1"/>
+
+            </android.support.design.widget.TextInputLayout>
 
 
         </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="p2"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/colorwhite"
+                android:textSize="20dp" />
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="160dp">
+
+                <EditText
+                    android:id="@+id/adress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorwhite"
+                    android:text="0"
+                    android:inputType="number"
+                    android:maxEms="1"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp">
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorwhite"
+                    android:text="0"
+                    android:inputType="number"
+                    android:maxEms="1"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp">
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorwhite"
+                    android:text="0"
+                    android:inputType="number"
+                    android:maxEms="1"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp">
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:textColor="@color/colorwhite"
+                    android:text="0"
+                    android:inputType="number"
+                    android:maxEms="1"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp">
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorwhite"
+                    android:text="0"
+                    android:inputType="number"
+                    android:maxEms="1"
+                    android:clickable="false"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+
+        </LinearLayout>
+
     </LinearLayout>
 </LinearLayout>

@@ -5,36 +5,37 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <LinearLayout
+        android:background="@drawable/background_frm"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical" >
-
         <TextView
             android:id="@+id/header"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:text="New Match"
-            android:textSize="15sp"
+            android:textSize="30sp"
             android:drawableLeft="@drawable/backv"
             android:layout_gravity="center"
             android:gravity="center"
             android:textColor="#fff"
             android:background="#004040"
             />
-
         <Switch
             android:id="@+id/simpleSwitch"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:checked="true"
-            android:layout_gravity="right"
-            android:text="Notification         "
-            android:textSize="20dp"
             android:layout_margin="@dimen/activity_horizontal_margin"
-            android:textOff=" 4.0 "
-            android:textOn=" 6.0 ">
+            android:text="Notification"
+            android:textSize="20sp"
+            android:textOff="4.4"
+            android:textOn="6.6"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:textColor="#fff"
+            />
 
-        </Switch>
+
         <CheckBox
             android:id="@+id/first_check"
             android:layout_width="fill_parent"
@@ -43,7 +44,8 @@
             android:layout_gravity="right"
             android:layout_margin="@dimen/activity_horizontal_margin"
             android:button="@null"
-            android:textSize="20dip"
+            android:textSize="20sp"
+            android:textColor="#fff"
             android:text="Deciding point  'No-AD' " />
 
         <CheckBox
@@ -53,14 +55,16 @@
             android:drawableRight="@android:drawable/btn_radio"
             android:layout_gravity="right"
             android:layout_margin="@dimen/activity_horizontal_margin"
+            android:textColor="#fff"
             android:button="@null"
-            android:textSize="20dip"
+            android:textSize="20sp"
             android:text="Match tiebreak " />
 
         <android.support.design.widget.TextInputLayout
             android:id="@+id/txt"
             android:layout_width="match_parent"
             android:layout_margin="@dimen/activity_horizontal_margin"
+            android:textColorHint="#eeeeee"
             android:layout_height="wrap_content">
 
             <EditText
@@ -68,6 +72,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Tournament's name"
+                android:textColor="#fff"
                 />
 
         </android.support.design.widget.TextInputLayout>
@@ -75,11 +80,12 @@
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:textColorHint="#eeeeee"
             android:layout_margin="@dimen/activity_horizontal_margin"
             >
-
             <EditText
                 android:id="@+id/adress"
+                android:textColor="#fff"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Address" />
@@ -91,9 +97,10 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:text="  Player"
-            android:background="#d6d6d6"
-            android:textColor="#000000"
+            android:background="#fff"
+            android:textColor="#222"
             android:textSize="20sp"
+            android:foregroundGravity="center"
             android:layout_margin="@dimen/activity_horizontal_margin"
             android:elegantTextHeight="true"
             />
@@ -101,15 +108,16 @@
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColorHint="#eeeeee"
             >
 
             <EditText
                 android:id="@+id/full_name"
+                android:textColor="#fff"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/activity_horizontal_margin"
                 android:hint="Full name"
-
                 />
 
         </android.support.design.widget.TextInputLayout>
@@ -117,6 +125,7 @@
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColorHint="#eeeeee"
             >
 
             <EditText
@@ -124,10 +133,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/activity_horizontal_margin"
+                android:textColor="#fff"
                 android:hint="Last Name" />
 
         </android.support.design.widget.TextInputLayout>
-
         <TextView
             android:id="@+id/admister_password"
             android:layout_width="match_parent"
@@ -135,6 +144,7 @@
             android:layout_margin="@dimen/activity_horizontal_margin"
             android:text="Administrator Password : "
             android:textSize="15sp"
+            android:textColor="#fff"
             android:textStyle="bold"
             />
 
@@ -143,13 +153,12 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:text="Create"
+            android:background="#eeeeee"
             android:layout_margin="@dimen/activity_horizontal_margin"
-            android:background="#80ffff"
-            android:textColor="#ffffff"
+            android:textColor="#222"
             android:fontFamily="casual"
             android:layout_gravity="center"
             />
-
     </LinearLayout>
 
 </ScrollView>

@@ -6,8 +6,12 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.TranslateAnimation;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import tennisonline.ltat.com.ltattennisscore.R;
@@ -15,6 +19,7 @@ import tennisonline.ltat.com.ltattennisscore.R;
 public class LTATSingup extends AppCompatActivity {
 
     Button about,create,join,back_button;
+    ImageView img;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +30,14 @@ public class LTATSingup extends AppCompatActivity {
         create=(Button) findViewById(R.id.create);
         join=(Button) findViewById(R.id.join);
         back_button=(Button) findViewById(R.id.back_button);
+        img=(ImageView) findViewById(R.id.bounceBallImage);
+
+        TranslateAnimation mAnimation = new TranslateAnimation(0.0f, 0.0f, 0.0f,-300.0f);
+        mAnimation.setDuration(500);
+        mAnimation.setFillAfter(true);
+        mAnimation.setRepeatCount(-200);
+        mAnimation.setRepeatMode(Animation.REVERSE);
+        img.setAnimation(mAnimation);
 
         about.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -7,28 +7,35 @@
     android:layout_height="fill_parent"
     android:orientation="vertical"
     android:layout_weight="1"
-    android:background="@drawable/img1"
+    android:background="@drawable/background_frm"
     tools:context="tennisonline.ltat.com.ltattennisscore.ActivityContainer.SplashActivity">
-<FrameLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:id="@+id/frame"
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/frame"
     >
 
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:layout_margin="@dimen/activity_horizontal_margin"
     android:gravity="center">
-<Button
-    android:layout_width="40dp"
-    android:layout_height="40dp"
-    android:id="@+id/warning"
-    android:layout_marginTop="-40dp"
-    android:layout_marginLeft="150dp"
-    android:background="@drawable/aboutopen"/>
 
-
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+     >
+     <Button
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/warning"
+        android:layout_marginLeft="200dp"
+        android:background="@drawable/abouts1"/>
+  </LinearLayout>
 
     <ImageView
         android:id="@+id/bounceBallImage"
@@ -65,32 +72,40 @@
             android:textAlignment="center"
             android:id="@+id/text2"
             android:textSize="15dp"/>
+    </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        >
         <Button
-            android:layout_width="240dp"
-            android:layout_marginTop="15dp"
-            android:layout_height="wrap_content"
-            android:textAlignment="center"
-            android:textSize="20dp"
-            android:outlineProvider="bounds"
-            android:text="Watch the Score"
-            android:textColor="#222"
             android:id="@+id/watch_score"
-            android:background="@color/colorwhite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  Watch the \n Score  "
+            android:textSize="20sp"
+            android:textColor="@color/btn_forground"
+            android:background="@color/btn_background"
             />
-
         <Button
             android:id="@+id/keep_score"
-            android:layout_width="240dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAlignment="center"
-            android:layout_marginTop="15dp"
-            android:textSize="20dp"
-            android:text="Keep the Score"
-            android:textColor="#222"
-            android:background="@color/colorwhite"/>
+            android:layout_marginLeft="30dp"
+            android:textSize="20sp"
+            android:text="  Keep the \n Score  "
+            android:textColor="@color/btn_forground"
+            android:background="@color/btn_background"
+            />
+
     </LinearLayout>
+
 </LinearLayout>
+
 </FrameLayout>
 
 </LinearLayout>

@@ -12,6 +12,7 @@ import android.widget.TextView;
 import tennisonline.ltat.com.ltattennisscore.R;
 
 public class LTATLogin extends AppCompatActivity {
+
     EditText tournament_name,address,full_name,last_name;
     TextView header,player,administer_password;
     Button create_account;
@@ -21,7 +22,6 @@ public class LTATLogin extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ltatlogin);
-
 
         tournament_name=(EditText) findViewById(R.id.tournament_name);
         address=(EditText) findViewById(R.id.adress);
@@ -34,29 +34,34 @@ public class LTATLogin extends AppCompatActivity {
         header=(TextView) findViewById(R.id.header);
         player=(TextView) findViewById(R.id.player);
         administer_password=(TextView) findViewById(R.id.admister_password);
-
         create_account=(Button) findViewById(R.id.create_accound);
 
         create_account.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                Intent intent=new Intent(LTATLogin.this,TossActivity.class);
-                startActivity(intent);
+                 String first_check1=first_check.getText().toString();
+                 String second_name1=second_check.getText().toString();
+                 String tournament_name1=tournament_name.getText().toString();
+                 String address1=address.getText().toString();
+                 String full_name1=full_name.getText().toString();
+                 String last_name1=last_name.getText().toString();
+
+                 Intent intent=new Intent(LTATLogin.this,TossActivity.class);
+                 startActivity(intent);
 
             }
         });
+
         header.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
                 Intent intent=new Intent(LTATLogin.this,SplashActivity.class);
                 startActivity(intent);
+
             }
         });
-
-
-
 
     }
 

@@ -64,8 +64,6 @@ public class SplashActivity extends AppCompatActivity {
                 startActivity(in);
             }
         });
-
-
         ImageView bounceBallImage = (ImageView)findViewById(R.id.bounceBallImage);
         Bitmap bitmap = BitmapFactory.decodeResource(getResources(),R.drawable.tennnn1);
 

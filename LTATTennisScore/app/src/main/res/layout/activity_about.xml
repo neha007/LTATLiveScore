@@ -4,17 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#555555"
+    android:background="@drawable/background_frm"
     android:orientation="vertical"
     tools:context="tennisonline.ltat.com.ltattennisscore.ActivityContainer.AboutActivity">
 
     <ImageView
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_marginTop="40dp"
         android:layout_marginLeft="150dp"
         android:id="@+id/image"
-        android:src="@drawable/aboutopen"/>
+        android:src="@drawable/abouts1"/>
 
     <TextView
         android:id="@+id/text"
@@ -37,18 +37,20 @@
         android:textSize="18dp" />
 
     <Button
-        android:layout_width="320dp"
-        android:layout_height="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="Contact us"
         android:background="@color/colorwhite"
         android:textColor="#555555"
         android:textSize="25dp"
-        android:layout_marginLeft="20dp"/>
+        android:layout_gravity="center"/>
 
     <LinearLayout
+        android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:orientation="horizontal">
 
         <ImageView
@@ -57,7 +59,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginLeft="30dp"
             android:id="@+id/image1"
-            android:src="@drawable/aboutopen"/>
+            android:src="@drawable/abouts1"/>
 
         <LinearLayout
             android:layout_width="wrap_content"
