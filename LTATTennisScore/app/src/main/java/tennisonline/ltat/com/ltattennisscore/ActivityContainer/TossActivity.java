@@ -28,6 +28,7 @@ import tennisonline.ltat.com.ltattennisscore.R;
         r2 = (RadioButton)findViewById(R.id.r2);
         imageView=(ImageView) findViewById(R.id.img);
         btn_continu=(Button) findViewById(R.id.btn_contue);
+
         imageView.setVisibility(View.VISIBLE);
         btn_continu.setVisibility(View.INVISIBLE);
 
@@ -37,45 +38,63 @@ import tennisonline.ltat.com.ltattennisscore.R;
             public void onClick(View view) {
 
 
+                // imageView.setVisibility(View.VISIBLE);
+                btn_continu.setVisibility(View.INVISIBLE);
+
+                imageView.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+
+                    }
+                });
+
+
+                r1.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+
+                        Animation img = new TranslateAnimation(0, -260, 0, 0);
+                        img.setDuration(500);
+                        img.setFillAfter(true);
+                        imageView.startAnimation(img);
+                        btn_continu.setVisibility(View.VISIBLE);
+
+                    }
+
+                });
+
+                r2.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+
+                        Animation img = new TranslateAnimation(Animation.ABSOLUTE, 250, Animation.ABSOLUTE, Animation.ABSOLUTE);
+                        //img.setDuration(1000);
+                        img.setDuration(500);
+                        img.setFillAfter(true);
+                        imageView.startAnimation(img);
+                        btn_continu.setVisibility(View.VISIBLE);
+
+                    }
+                });
+
+
+                btn_continu.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+
+                        Intent intent = new Intent(TossActivity.this, TossActivity1.class);
+                        startActivity(intent);
+
+                    }
+                });
             }
-        });
 
-        r1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                Animation img = new TranslateAnimation(Animation.ABSOLUTE,-250,Animation.ABSOLUTE,Animation.ABSOLUTE);
-                img.setDuration(1000);
-                img.setFillAfter(true);
-                imageView.startAnimation(img);
-                btn_continu.setVisibility(View.VISIBLE);
-
-            }
-
-        });
-
-        r2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                Animation img = new TranslateAnimation(Animation.ABSOLUTE,250,Animation.ABSOLUTE,Animation.ABSOLUTE);
-                img.setDuration(1000);
-                img.setFillAfter(true);
-                imageView.startAnimation(img);
-                btn_continu.setVisibility(View.VISIBLE);
-
-            }
-        });
-
-
-        btn_continu.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                Intent intent=new Intent(TossActivity.this,TossActivity1.class);
-                startActivity(intent);
-
-            }
         });
     }
-   }
+  }
+
+
+
+
+

@@ -52,7 +52,7 @@ public class SplashActivity extends AppCompatActivity {
         watch_score.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(SplashActivity.this,TossActivity.class);
+                Intent i = new Intent(SplashActivity.this,Gifsplash.class);
                 startActivity(i);
             }
         });
@@ -70,7 +70,7 @@ public class SplashActivity extends AppCompatActivity {
         RoundedBitmapDrawable roundedBitmapDrawable = RoundedBitmapDrawableFactory.create(getResources(),bitmap);
         roundedBitmapDrawable.setCircular(true);
         bounceBallImage.setImageDrawable(roundedBitmapDrawable);
-        TranslateAnimation mAnimation = new TranslateAnimation(0.0f, 0.0f, 0.0f,-300.0f);
+        TranslateAnimation mAnimation = new TranslateAnimation(0.0f, 0.0f, 0.0f,-380.0f);
         mAnimation.setDuration(500);
         mAnimation.setFillAfter(true);
         mAnimation.setRepeatCount(-200);
@@ -79,11 +79,6 @@ public class SplashActivity extends AppCompatActivity {
 
         }
 
-    public void loadFragment(Fragment fragment){
-        FragmentManager fm = getSupportFragmentManager();
-        FragmentTransaction fragmentTransaction = fm.beginTransaction();
-        fragmentTransaction.replace(R.id.frame, fragment);
-        fragmentTransaction.commit();
-    }
+
 
     }

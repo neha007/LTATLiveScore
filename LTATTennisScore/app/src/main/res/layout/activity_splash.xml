@@ -10,11 +10,7 @@
     android:background="@drawable/background_frm"
     tools:context="tennisonline.ltat.com.ltattennisscore.ActivityContainer.SplashActivity">
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/frame"
-    >
+
 
 <LinearLayout
     android:layout_width="match_parent"
@@ -22,6 +18,7 @@
     android:orientation="vertical"
     android:layout_margin="@dimen/activity_horizontal_margin"
     android:gravity="center">
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -33,24 +30,17 @@
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:id="@+id/warning"
-        android:layout_marginLeft="200dp"
+        android:layout_marginLeft="250dp"
         android:background="@drawable/abouts1"/>
   </LinearLayout>
 
-    <ImageView
-        android:id="@+id/bounceBallImage"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="50dp"
-        android:background="@drawable/tennnn1"
-    />
+
 
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/lin_lay"
-        android:layout_marginTop="50dp"
         android:orientation="vertical">
 
         <TextView
@@ -74,38 +64,60 @@
             android:textSize="15dp"/>
     </LinearLayout>
 
-    <LinearLayout
+
+    <ImageView
+        android:id="@+id/bounceBallImage"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/tennnn1" />
+
+
+    <pl.droidsonroids.gif.GifImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:layout_marginTop="-30dp"
         android:layout_gravity="center"
-        android:gravity="center"
-        android:layout_marginTop="50dp"
-        >
+        android:src="@drawable/green"
+        />
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
         <Button
-            android:id="@+id/watch_score"
-            android:layout_width="wrap_content"
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
-            android:text="  Watch the \n Score  "
-            android:textSize="20sp"
-            android:textColor="@color/btn_forground"
-            android:background="@color/btn_background"
+            android:textAlignment="center"
+            android:textSize="15dp"
+            android:outlineProvider="bounds"
+            android:text="Watch Score"
+            android:textColor="#222"
+            android:layout_marginLeft="25dp"
+            android:id="@+id/watch_score"
+            android:background="@color/colorwhite"
+            android:layout_gravity="left"
             />
+
+
+
         <Button
             android:id="@+id/keep_score"
-            android:layout_width="wrap_content"
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:textSize="20sp"
-            android:text="  Keep the \n Score  "
-            android:textColor="@color/btn_forground"
-            android:background="@color/btn_background"
-            />
+            android:layout_gravity="right"
+            android:background="@color/colorwhite"
+            android:text="Keep Score"
+            android:textAlignment="center"
+            android:textColor="#222"
+            android:layout_marginLeft="35dp"
+            android:textSize="15dp" />
 
     </LinearLayout>
 
 </LinearLayout>
 
-</FrameLayout>
 
 </LinearLayout>

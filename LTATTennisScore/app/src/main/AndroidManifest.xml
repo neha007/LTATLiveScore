@@ -26,7 +26,9 @@
         <activity android:name=".ActivityContainer.LTATSingup" />
         <activity android:name=".ActivityContainer.AboutActivity" />
         <activity android:name=".ActivityContainer.TossActivity" />
-        <activity android:name=".ActivityContainer.TossActivity1"></activity>
+        <activity android:name=".ActivityContainer.TossActivity1" />
+        <activity android:name=".ActivityContainer.Gifsplash" />
+        <activity android:name=".ActivityContainer.WinActivity"></activity>
     </application>
 
 </manifest>

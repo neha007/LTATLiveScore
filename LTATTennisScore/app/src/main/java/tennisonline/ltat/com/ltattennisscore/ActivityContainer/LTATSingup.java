@@ -64,11 +64,13 @@ public class LTATSingup extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        join.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(LTATSingup.this,WinActivity.class);
+                startActivity(intent);
+            }
+        });
     }
-    public void loadFragment(Fragment fragment){
-        FragmentManager fm = getSupportFragmentManager();
-        FragmentTransaction fragmentTransaction = fm.beginTransaction();
-        fragmentTransaction.replace(R.id.frame, fragment);
-        fragmentTransaction.commit();
-    }
+
 }

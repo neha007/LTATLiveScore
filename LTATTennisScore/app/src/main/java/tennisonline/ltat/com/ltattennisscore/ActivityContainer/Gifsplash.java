@@ -5,12 +5,11 @@ import android.os.Bundle;
 
 import tennisonline.ltat.com.ltattennisscore.R;
 
-public class TossActivity1 extends AppCompatActivity {
+public class Gifsplash extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_toss1);
-
+        setContentView(R.layout.activity_gifsplash);
     }
 }
