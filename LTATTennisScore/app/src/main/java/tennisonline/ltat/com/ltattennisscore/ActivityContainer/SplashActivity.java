@@ -21,12 +21,9 @@ import tennisonline.ltat.com.ltattennisscore.fragmentcontainer.About;
 
 public class SplashActivity extends AppCompatActivity {
 
-
     Button watch_score,keep_score;
     private static final String TAG = "AnimationStarter";
     Button about ;
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -78,7 +75,4 @@ public class SplashActivity extends AppCompatActivity {
         bounceBallImage.setAnimation(mAnimation);
 
         }
-
-
-
     }
