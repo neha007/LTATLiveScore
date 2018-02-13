@@ -11,19 +11,17 @@ import tennisonline.ltat.com.ltattennisscore.R;
 
 public class TossActivity1 extends AppCompatActivity {
 
-    LinearLayout linearLayout1,linearLayout2;
+            LinearLayout linearLayout1,linearLayout2;
 
     int teamA=0,teamB=0;
     int A = 0, B =0,C=0,D=0,E=0,F=0,G=0,I=0,J=0,K=0;
     EditText e1,e2,e3,e4,e5,e6,e7,e8,e9,e10;
     int Ad ;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_toss1);
-
 
         e1 = (EditText)findViewById(R.id.p1);
         e2 = (EditText)findViewById(R.id.p2);
@@ -141,4 +139,4 @@ public class TossActivity1 extends AppCompatActivity {
     }
 
 
-}
+    }
