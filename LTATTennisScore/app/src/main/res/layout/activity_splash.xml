@@ -97,8 +97,8 @@
             android:textColor="#222"
             android:layout_marginLeft="25dp"
             android:id="@+id/watch_score"
-            android:background="@color/colorwhite"
             android:layout_gravity="left"
+            android:background="@drawable/ripple"
             />
 
 
@@ -108,7 +108,7 @@
             android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
-            android:background="@color/colorwhite"
+            android:background="@drawable/ripple"
             android:text="Keep Score"
             android:textAlignment="center"
             android:textColor="#222"

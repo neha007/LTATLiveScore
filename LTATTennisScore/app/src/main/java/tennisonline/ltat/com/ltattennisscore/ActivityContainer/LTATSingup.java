@@ -32,8 +32,8 @@ public class LTATSingup extends AppCompatActivity {
         back_button=(Button) findViewById(R.id.back_button);
         img=(ImageView) findViewById(R.id.bounceBallImage);
 
-        TranslateAnimation mAnimation = new TranslateAnimation(0.0f, 0.0f, 0.0f,-300.0f);
-        mAnimation.setDuration(500);
+        TranslateAnimation mAnimation = new TranslateAnimation(0.0f, 0.0f, 0.0f,-200.0f);
+        mAnimation.setDuration(400);
         mAnimation.setFillAfter(true);
         mAnimation.setRepeatCount(-200);
         mAnimation.setRepeatMode(Animation.REVERSE);

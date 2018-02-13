@@ -1,15 +1,28 @@
 package tennisonline.ltat.com.ltattennisscore.ActivityContainer;
 
 import android.content.Intent;
+import android.graphics.Point;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Display;
+import android.view.MotionEvent;
 import android.view.View;
+import android.view.ViewGroup;
+import android.view.Window;
+import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.TranslateAnimation;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+
+import java.util.Scanner;
+import java.util.Timer;
+import java.util.TimerTask;
+
 import tennisonline.ltat.com.ltattennisscore.R;
 
   public class TossActivity extends AppCompatActivity {
@@ -18,6 +31,7 @@ import tennisonline.ltat.com.ltattennisscore.R;
     RadioButton r1,r2;
     ImageView imageView;
     Button btn_continu;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,33 +42,13 @@ import tennisonline.ltat.com.ltattennisscore.R;
         r2 = (RadioButton)findViewById(R.id.r2);
         imageView=(ImageView) findViewById(R.id.img);
         btn_continu=(Button) findViewById(R.id.btn_contue);
-
-        imageView.setVisibility(View.VISIBLE);
         btn_continu.setVisibility(View.INVISIBLE);
-
-
-        imageView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-
-                // imageView.setVisibility(View.VISIBLE);
-                btn_continu.setVisibility(View.INVISIBLE);
-
-                imageView.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-
-
-                    }
-                });
-
-
+        
                 r1.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
 
-                        Animation img = new TranslateAnimation(0, -260, 0, 0);
+                        Animation img = new TranslateAnimation(Animation.ABSOLUTE, -265, Animation.ABSOLUTE, Animation.ABSOLUTE);
                         img.setDuration(500);
                         img.setFillAfter(true);
                         imageView.startAnimation(img);
@@ -85,16 +79,10 @@ import tennisonline.ltat.com.ltattennisscore.R;
 
                         Intent intent = new Intent(TossActivity.this, TossActivity1.class);
                         startActivity(intent);
-
                     }
                 });
             }
-
-        });
     }
-  }
-
-
 
 
 

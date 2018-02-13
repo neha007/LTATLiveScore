@@ -44,7 +44,7 @@
         android:id="@+id/bounceBallImage"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="100dp"
         android:background="@drawable/tennnn1"
         />
         <TextView
@@ -52,16 +52,27 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:textStyle="bold"
+            android:layout_marginTop="10dp"
             android:text="You can either create a \n      tournament  or join the one. "
             android:textSize="20sp"
             android:textColor="@color/btn_background"
             android:gravity="center"
             />
     </LinearLayout>
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-30dp"
+        android:layout_gravity="center"
+        android:src="@drawable/green"
+        />
+
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
         android:orientation="horizontal"
         android:gravity="center"
         android:layout_gravity="center"
@@ -69,7 +80,7 @@
         <Button
             android:id="@+id/create"
             android:text="CREATE"
-            android:background="@color/btn_background"
+            android:background="@drawable/ripple"
             android:textColor="@color/btn_forground"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -78,7 +89,7 @@
             android:id="@+id/join"
             android:text="JOIN"
             android:layout_marginLeft="40dp"
-            android:background="@color/btn_background"
+            android:background="@drawable/ripple"
             android:textColor="@color/btn_forground"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"></Button>

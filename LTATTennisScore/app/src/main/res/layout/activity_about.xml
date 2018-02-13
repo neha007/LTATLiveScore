@@ -37,11 +37,11 @@
         android:textSize="18dp" />
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="220dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="Contact us"
-        android:background="@color/colorwhite"
+        android:background="@drawable/ripple"
         android:textColor="#555555"
         android:textSize="25dp"
         android:layout_gravity="center"/>
@@ -54,9 +54,9 @@
         android:orientation="horizontal">
 
         <ImageView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_marginTop="20dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="25dp"
             android:layout_marginLeft="30dp"
             android:id="@+id/image1"
             android:src="@drawable/abouts1"/>

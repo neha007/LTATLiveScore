@@ -95,9 +95,7 @@
             <ImageView
                 android:id="@+id/img"
                 android:layout_width="50dp"
-                android:layout_gravity="center"
                 android:layout_height="50dp"
-                android:background="?attr/selectableItemBackgroundBorderless"
                 android:clickable="true"
                 android:src="@drawable/tennis1"
                 />
@@ -123,7 +121,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:gravity="center"
-        android:background="#fff"
+        android:background="@drawable/ripple"
         android:textColor="#222"
         android:text="Continue"
         android:textSize="30dp"
