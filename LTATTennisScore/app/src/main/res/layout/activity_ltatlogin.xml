@@ -2,10 +2,11 @@
 <ScrollView
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/back_button"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <LinearLayout
-        android:background="@drawable/background_frm"
+        android:background="@drawable/bakcreate"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical" >
@@ -34,8 +35,6 @@
             android:gravity="right"
             android:textColor="#fff"
             />
-
-
         <CheckBox
             android:id="@+id/first_check"
             android:layout_width="fill_parent"
