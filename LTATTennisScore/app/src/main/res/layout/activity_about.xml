@@ -43,8 +43,8 @@
         android:text="Contact us"
         android:id="@+id/contact_button"
         android:background="@drawable/ripple"
-        android:textColor="#555555"
-        android:textSize="25dp"
+        android:textColor="@color/colortext"
+        android:textSize="15dp"
         android:layout_gravity="center"/>
 
     <LinearLayout

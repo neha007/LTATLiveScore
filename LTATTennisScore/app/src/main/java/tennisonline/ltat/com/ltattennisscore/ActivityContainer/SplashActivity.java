@@ -23,9 +23,13 @@ public class SplashActivity extends AppCompatActivity {
     private static final String TAG = "AnimationStarter";
     private int duration = 400;
     Button about_button ;
+<<<<<<< HEAD
     TextView text1,text2;
     ImageView bounceBallImage;
     GifImageView giff11;
+=======
+    ImageView bounceBallImage;
+>>>>>>> change in splashactivity
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,7 +71,11 @@ public class SplashActivity extends AppCompatActivity {
                 startActivity(in);
             }
         });
+<<<<<<< HEAD
          bounceBallImage = (ImageView)findViewById(R.id.bounceBallImage);
+=======
+        bounceBallImage = (ImageView)findViewById(R.id.bounceBallImage);
+>>>>>>> change in splashactivity
         Bitmap bitmap = BitmapFactory.decodeResource(getResources(),R.drawable.tennnn1);
 
         RoundedBitmapDrawable roundedBitmapDrawable = RoundedBitmapDrawableFactory.create(getResources(),bitmap);
