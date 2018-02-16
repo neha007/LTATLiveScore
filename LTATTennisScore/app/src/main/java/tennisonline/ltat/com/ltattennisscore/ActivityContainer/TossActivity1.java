@@ -6,7 +6,6 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-
 import tennisonline.ltat.com.ltattennisscore.R;
 
 public class TossActivity1 extends AppCompatActivity {
@@ -16,7 +15,7 @@ public class TossActivity1 extends AppCompatActivity {
     int teamA=0,teamB=0;
     int A=0,B=0,C=0,D=0,E=0,F=0,G=0,I=0,J=0,K=0;
     EditText e1,e2,e3,e4,e5,e6,e7,e8,e9,e10;
-    int Ad ;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -90,11 +89,9 @@ public class TossActivity1 extends AppCompatActivity {
                 if (teamB <30){
                     teamB  = teamB + 15;
                     displayteamB(teamB);
-
                 }else if (teamB == 30){
                     teamB  = teamB + 10;
                     displayteamB(teamB);
-
                      }
 
                      else if (teamB == 40){

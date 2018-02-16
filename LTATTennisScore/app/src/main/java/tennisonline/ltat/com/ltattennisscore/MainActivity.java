@@ -6,10 +6,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
-
 import tennisonline.ltat.com.ltattennisscore.ActivityContainer.SplashActivity;
 
-public class MainActivity extends AppCompatActivity {
+   public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,8 +24,8 @@ public class MainActivity extends AppCompatActivity {
                 Intent i=new Intent(MainActivity.this, SplashActivity.class);
                 startActivity(i);
                 Toast.makeText(getApplicationContext(),"check",Toast.LENGTH_LONG).show();
+
             }
         });
     }
-
 }

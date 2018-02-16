@@ -170,6 +170,7 @@
                 android:layout_marginLeft="160dp">
 
                 <EditText
+                    android:id="@+id/p1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/colorwhite"
@@ -190,6 +191,7 @@
                 android:layout_marginLeft="10dp">
 
                 <EditText
+                    android:id="@+id/p2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/colorwhite"
@@ -205,6 +207,7 @@
                 android:layout_marginLeft="10dp">
 
                 <EditText
+                    android:id="@+id/p3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/colorwhite"
@@ -220,6 +223,7 @@
                 android:layout_marginLeft="10dp">
 
                 <EditText
+                    android:id="@+id/p4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/colorwhite"
@@ -236,6 +240,7 @@
                 android:layout_marginLeft="10dp">
 
                 <EditText
+
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/colorwhite"
@@ -271,6 +276,7 @@
                 android:layout_marginLeft="160dp">
 
                 <EditText
+                    android:id="@+id/p6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/colorwhite"
@@ -289,6 +295,7 @@
                 android:layout_marginLeft="10dp">
 
                 <EditText
+                    android:id="@+id/p7"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/colorwhite"
@@ -304,6 +311,7 @@
                 android:layout_marginLeft="10dp">
 
                 <EditText
+                    android:id="@+id/p8"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/colorwhite"
@@ -348,9 +356,7 @@
 
             </android.support.design.widget.TextInputLayout>
 
-
         </LinearLayout>
-
 
         </LinearLayout>
 

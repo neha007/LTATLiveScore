@@ -12,7 +12,9 @@ import android.view.animation.Animation;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.view.animation.TranslateAnimation;
+import android.widget.TextView;
 
+import pl.droidsonroids.gif.GifImageView;
 import tennisonline.ltat.com.ltattennisscore.R;
 
 public class SplashActivity extends AppCompatActivity {
@@ -21,6 +23,9 @@ public class SplashActivity extends AppCompatActivity {
     private static final String TAG = "AnimationStarter";
     private int duration = 400;
     Button about_button ;
+    TextView text1,text2;
+    ImageView bounceBallImage;
+    GifImageView giff11;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +35,10 @@ public class SplashActivity extends AppCompatActivity {
         about_button = (Button) findViewById(R.id.aboutus);
         watchscore_button=(Button) findViewById(R.id.watchscore_button);
         keepscore_button=(Button) findViewById(R.id.keepscore_button);
+
+        text1=(TextView) findViewById(R.id.text1);
+        text2=(TextView) findViewById(R.id.text2);
+        giff11=(GifImageView) findViewById(R.id.gif11);
 
 
         about_button.setOnClickListener(new View.OnClickListener() {
@@ -58,7 +67,7 @@ public class SplashActivity extends AppCompatActivity {
                 startActivity(in);
             }
         });
-        ImageView bounceBallImage = (ImageView)findViewById(R.id.bounceBallImage);
+         bounceBallImage = (ImageView)findViewById(R.id.bounceBallImage);
         Bitmap bitmap = BitmapFactory.decodeResource(getResources(),R.drawable.tennnn1);
 
         RoundedBitmapDrawable roundedBitmapDrawable = RoundedBitmapDrawableFactory.create(getResources(),bitmap);

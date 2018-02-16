@@ -4,7 +4,7 @@
 
     <item android:drawable="@drawable/background">
 
-            <solid android:color="@color/colorgrass"></solid>
+        <solid android:color="@color/colorgrass"></solid>
 
     </item>
 

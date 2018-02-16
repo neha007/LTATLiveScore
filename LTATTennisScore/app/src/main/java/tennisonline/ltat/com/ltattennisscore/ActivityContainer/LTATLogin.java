@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
-
+import android.widget.Toast;
 import tennisonline.ltat.com.ltattennisscore.R;
 
 public class LTATLogin extends AppCompatActivity {
@@ -16,6 +16,7 @@ public class LTATLogin extends AppCompatActivity {
     EditText tournament_name,address,full_name,last_name;
     TextView header,player,administer_password;
     Button create_button;
+    int srno;
     CheckBox first_check,second_check;
 
     @Override
@@ -44,9 +45,19 @@ public class LTATLogin extends AppCompatActivity {
                  String address1=address.getText().toString();
                  String full_name1=full_name.getText().toString();
                  String last_name1=last_name.getText().toString();
+                 srno=0;
 
-                 Intent intent=new Intent(LTATLogin.this,TossActivity.class);
-                 startActivity(intent);
+                  Person p1=new Person(srno,tournament_name1,address1,full_name1,last_name1);
+                  DatabaseHelper databaseHelper=new DatabaseHelper(LTATLogin.this);
+
+                   boolean b=databaseHelper.addPerson(p1);
+
+                if(b==true)
+                {
+                    Intent intent=new Intent(LTATLogin.this,TossActivity.class);
+                       startActivity(intent);
+                    Toast.makeText(LTATLogin.this, "create succesfully", Toast.LENGTH_SHORT).show();
+                }
 
             }
         });
@@ -62,5 +73,4 @@ public class LTATLogin extends AppCompatActivity {
         });
 
     }
-
 }
