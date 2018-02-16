@@ -8,6 +8,7 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-
-
+    <string name="show"> Show 5 Tournaments</string>
+    <string name="action_settings">Settings</string>
+    <string name="sinuptext">You can either create a \n      tournament  or join the one! </string>
 </resources>

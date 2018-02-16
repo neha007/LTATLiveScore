@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/grass"
+    tools:context="tennisonline.ltat.com.ltattennisscore.ActivityContainer.Filters">
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/framelayout">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Country"
+        android:textColor="@color/colorwhite"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/countryttext"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="India"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/colorwhite"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/country"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:text="City"
+        android:textColor="@color/colorwhite"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/cityttext"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="All Cities"
+        android:layout_marginTop="110dp"
+        android:textColor="@color/colorwhite"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/city"
+        android:textSize="20dp"/>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="450dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/ripple"
+        android:id="@+id/show"
+        android:textColor="@color/colorblack"
+        android:text="@string/show"/>
+</FrameLayout>
+</LinearLayout>

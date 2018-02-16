@@ -26,9 +26,9 @@
             android:background="@drawable/back"
             />
         <Button
-            android:id="@+id/about_keppScore"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
+            android:id="@+id/aboutsinup_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:layout_marginLeft="250dp"
             android:background="@drawable/abouts1"
             />
@@ -36,15 +36,15 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="250dp"
+        android:layout_height="200dp"
         android:orientation="vertical"
         android:gravity="center"
         >
     <ImageView
         android:id="@+id/bounceBallImage"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="100dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="50dp"
         android:background="@drawable/tennnn1"
         />
         <TextView
@@ -52,45 +52,42 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:textStyle="bold"
-            android:layout_marginTop="10dp"
-            android:text="You can either create a \n      tournament  or join the one. "
+            android:layout_marginTop="20dp"
+            android:text="@string/sinuptext"
             android:textSize="20sp"
             android:textColor="@color/btn_background"
             android:gravity="center"
             />
     </LinearLayout>
-
-
     <pl.droidsonroids.gif.GifImageView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="-30dp"
+        android:layout_height="192dp"
+        android:layout_marginTop="20dp"
         android:layout_gravity="center"
         android:src="@drawable/green"
         />
-
-
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center"
+        android:layout_marginTop="30dp"
         android:layout_gravity="center"
         >
         <Button
-            android:id="@+id/create"
+            android:id="@+id/create_button"
             android:text="CREATE"
             android:background="@drawable/ripple"
-            android:textColor="@color/btn_forground"
+            android:textColor="@color/colortext"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             />
         <Button
-            android:id="@+id/join"
+            android:id="@+id/join_button"
             android:text="JOIN"
             android:layout_marginLeft="40dp"
             android:background="@drawable/ripple"
-            android:textColor="@color/btn_forground"
+            android:textColor="@color/colortext"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"></Button>
 

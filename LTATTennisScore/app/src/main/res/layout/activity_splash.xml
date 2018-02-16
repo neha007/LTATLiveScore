@@ -22,13 +22,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:layout_marginTop="-60dp"
         android:gravity="center"
      >
      <Button
         android:layout_width="30dp"
         android:layout_height="30dp"
-        android:id="@+id/warning"
-        android:layout_marginLeft="250dp"
+        android:id="@+id/aboutus"
+        android:layout_marginLeft="280dp"
         android:background="@drawable/abouts1"/>
   </LinearLayout>
 
@@ -48,32 +49,24 @@
             android:textSize="25sp"
             android:textAlignment="center"
             android:text="@string/text"
-            android:layout_marginTop="15dp"
             android:textColor="@color/colorwhite"/>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/text2"
-            android:layout_marginTop="15dp"
-            android:textColor="@color/colorwhite"
-            android:textAlignment="center"
-            android:id="@+id/text2"
-            android:textSize="15dp"/>
+
     </LinearLayout>
 
 
     <ImageView
         android:id="@+id/bounceBallImage"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="50dp"
         android:background="@drawable/tennnn1" />
 
 
     <pl.droidsonroids.gif.GifImageView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="-30dp"
+        android:layout_height="192dp"
+        android:layout_marginTop="20dp"
         android:layout_gravity="center"
         android:src="@drawable/green"
         />
@@ -83,6 +76,7 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
         android:orientation="horizontal">
 
         <Button
@@ -90,11 +84,10 @@
             android:layout_height="wrap_content"
             android:textAlignment="center"
             android:textSize="15dp"
-            android:outlineProvider="bounds"
             android:text="Watch Score"
-            android:textColor="#222"
+            android:textColor="@color/colortext"
             android:layout_marginLeft="25dp"
-            android:id="@+id/watch_score"
+            android:id="@+id/watchscore_button"
             android:layout_gravity="left"
             android:background="@drawable/ripple"
             />
@@ -102,14 +95,14 @@
 
 
         <Button
-            android:id="@+id/keep_score"
+            android:id="@+id/keepscore_button"
             android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
             android:background="@drawable/ripple"
             android:text="Keep Score"
             android:textAlignment="center"
-            android:textColor="#222"
+            android:textColor="@color/colortext"
             android:layout_marginLeft="35dp"
             android:textSize="15dp" />
 

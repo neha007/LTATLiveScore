@@ -9,6 +9,6 @@
     <color name="colorwhite">#FFF</color>
     <color name="colorgrass">#396552</color>
     <color name="btn_background">#fff</color>
-    <color name="btn_forground">#222</color>
+    <color name="colortext">#222</color>
 
 </resources>

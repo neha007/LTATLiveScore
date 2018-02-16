@@ -18,28 +18,29 @@ import tennisonline.ltat.com.ltattennisscore.R;
 
 public class LTATSingup extends AppCompatActivity {
 
-    Button about,create,join,back_button;
-    ImageView img;
+    Button aboutus_button,create_button,join_button,back_button;
+    private int duration = 350;
+    ImageView bounceBallImage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ltatsingup);
 
-        about=(Button) findViewById(R.id.about_keppScore);
-        create=(Button) findViewById(R.id.create);
-        join=(Button) findViewById(R.id.join);
+        aboutus_button=(Button) findViewById(R.id.aboutsinup_button);
+        create_button=(Button) findViewById(R.id.create_button);
+        join_button=(Button) findViewById(R.id.join_button);
         back_button=(Button) findViewById(R.id.back_button);
-        img=(ImageView) findViewById(R.id.bounceBallImage);
+        bounceBallImage=(ImageView) findViewById(R.id.bounceBallImage);
 
-        TranslateAnimation mAnimation = new TranslateAnimation(0.0f, 0.0f, 0.0f,-200.0f);
-        mAnimation.setDuration(400);
+        TranslateAnimation mAnimation = new TranslateAnimation(0.0f, 0.0f, 0.0f,-100.0f);
+        mAnimation.setDuration(duration);
         mAnimation.setFillAfter(true);
         mAnimation.setRepeatCount(-200);
         mAnimation.setRepeatMode(Animation.REVERSE);
-        img.setAnimation(mAnimation);
+        bounceBallImage.setAnimation(mAnimation);
 
-        about.setOnClickListener(new View.OnClickListener() {
+        aboutus_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
@@ -56,7 +57,7 @@ public class LTATSingup extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        create.setOnClickListener(new View.OnClickListener() {
+        create_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
@@ -64,10 +65,10 @@ public class LTATSingup extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        join.setOnClickListener(new View.OnClickListener() {
+        join_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(LTATSingup.this,WinActivity.class);
+                Intent intent=new Intent(LTATSingup.this,Filters.class);
                 startActivity(intent);
             }
         });

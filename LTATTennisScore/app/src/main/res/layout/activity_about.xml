@@ -41,6 +41,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="Contact us"
+        android:id="@+id/contact_button"
         android:background="@drawable/ripple"
         android:textColor="#555555"
         android:textSize="25dp"

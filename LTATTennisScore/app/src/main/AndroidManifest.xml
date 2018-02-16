@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="tennisonline.ltat.com.ltattennisscore">
 
@@ -29,7 +28,10 @@
         <activity android:name=".ActivityContainer.TossActivity" />
         <activity android:name=".ActivityContainer.TossActivity1" />
         <activity android:name=".ActivityContainer.Gifsplash" />
-        <activity android:name=".ActivityContainer.WinActivity"></activity>
+        <activity android:name=".ActivityContainer.WinActivity" />
+        <activity android:name=".ActivityContainer.JoinActivity" />
+        <activity android:name=".ActivityContainer.Filters" />
+        <activity android:name=".ActivityContainer.CountryActivity"></activity>
     </application>
 
 </manifest>

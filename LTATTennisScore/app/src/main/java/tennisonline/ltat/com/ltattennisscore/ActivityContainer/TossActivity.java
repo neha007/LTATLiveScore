@@ -28,9 +28,10 @@ import tennisonline.ltat.com.ltattennisscore.R;
   public class TossActivity extends AppCompatActivity {
 
     RadioGroup radioGroup;
-    RadioButton r1,r2;
+    RadioButton radiobutton1,radiobutton2;
     ImageView imageView;
-    Button btn_continu;
+    private int duration = 500;
+    Button continue_button;
 
 
     @Override
@@ -38,42 +39,41 @@ import tennisonline.ltat.com.ltattennisscore.R;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_toss);
         radioGroup = (RadioGroup)findViewById(R.id.radiogroup);
-        r1 = (RadioButton)findViewById(R.id.r1);
-        r2 = (RadioButton)findViewById(R.id.r2);
+        radiobutton1 = (RadioButton)findViewById(R.id.radiobutton1);
+        radiobutton2 = (RadioButton)findViewById(R.id.radiobutton2);
         imageView=(ImageView) findViewById(R.id.img);
-        btn_continu=(Button) findViewById(R.id.btn_contue);
-        btn_continu.setVisibility(View.INVISIBLE);
-        
-                r1.setOnClickListener(new View.OnClickListener() {
+        continue_button=(Button) findViewById(R.id.continue_button);
+        continue_button.setVisibility(View.INVISIBLE);
+
+        radiobutton1.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
 
                         Animation img = new TranslateAnimation(Animation.ABSOLUTE, -265, Animation.ABSOLUTE, Animation.ABSOLUTE);
-                        img.setDuration(500);
+                        img.setDuration(duration);
                         img.setFillAfter(true);
                         imageView.startAnimation(img);
-                        btn_continu.setVisibility(View.VISIBLE);
+                        continue_button.setVisibility(View.VISIBLE);
 
                     }
 
                 });
 
-                r2.setOnClickListener(new View.OnClickListener() {
+        radiobutton2.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
 
                         Animation img = new TranslateAnimation(Animation.ABSOLUTE, 250, Animation.ABSOLUTE, Animation.ABSOLUTE);
-                        //img.setDuration(1000);
-                        img.setDuration(500);
+                        img.setDuration(duration);
                         img.setFillAfter(true);
                         imageView.startAnimation(img);
-                        btn_continu.setVisibility(View.VISIBLE);
+                        continue_button.setVisibility(View.VISIBLE);
 
                     }
                 });
 
 
-                btn_continu.setOnClickListener(new View.OnClickListener() {
+        continue_button.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
 

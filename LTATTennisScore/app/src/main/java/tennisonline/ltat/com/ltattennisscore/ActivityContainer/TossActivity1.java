@@ -14,7 +14,7 @@ public class TossActivity1 extends AppCompatActivity {
             LinearLayout linearLayout1,linearLayout2;
 
     int teamA=0,teamB=0;
-    int A = 0, B =0,C=0,D=0,E=0,F=0,G=0,I=0,J=0,K=0;
+    int A=0,B=0,C=0,D=0,E=0,F=0,G=0,I=0,J=0,K=0;
     EditText e1,e2,e3,e4,e5,e6,e7,e8,e9,e10;
     int Ad ;
 
@@ -34,8 +34,8 @@ public class TossActivity1 extends AppCompatActivity {
         e9 = (EditText)findViewById(R.id.p9);
         e10 = (EditText)findViewById(R.id.p10);
 
-        linearLayout1 = (LinearLayout)findViewById(R.id.lt1);
-        linearLayout2 = (LinearLayout)findViewById(R.id.lt2);
+        linearLayout1 = (LinearLayout)findViewById(R.id.linearlayout1);
+        linearLayout2 = (LinearLayout)findViewById(R.id.linearlayout2);
 
 
 
@@ -61,6 +61,7 @@ public class TossActivity1 extends AppCompatActivity {
                         e1.setText(""+F);
                     }
                     if (F>=6&& G<=5){
+
                         G = G+1;
                         e2.setText(""+G);
                     }
@@ -120,7 +121,6 @@ public class TossActivity1 extends AppCompatActivity {
                             E = E+1;
                             e10.setText(""+E);
                         }
-
                 }
             }
         });
@@ -139,4 +139,8 @@ public class TossActivity1 extends AppCompatActivity {
     }
 
 
+
     }
+
+
+

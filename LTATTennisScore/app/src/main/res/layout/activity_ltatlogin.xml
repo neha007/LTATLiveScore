@@ -170,14 +170,13 @@
             />
 
         <Button
-            android:id="@+id/create_accound"
+            android:id="@+id/creatematch_button"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:text="Create"
             android:background="@drawable/ripple"
             android:layout_margin="@dimen/activity_horizontal_margin"
             android:textColor="#222"
-            android:fontFamily="casual"
             android:layout_gravity="center"
             />
 
